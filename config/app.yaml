@@ -10,3 +10,4 @@ automatic_scaling:
 
 skip_files:
 - ^\.git/.*$
+- ^(?!package).*$
