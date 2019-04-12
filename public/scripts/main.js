@@ -24,9 +24,10 @@ $(document).ready(function () {
                             return false; // break
                         }
                     });
+                } else {
+                    $("#outputColor").text("");
                 }
                 if (vehicleColor) {
-                    console.log("vehicleColor: " + vehicleColor);
                     $("#outputColor").html("Voertuig met kenteken <strong>" + searchPlate + "</strong> is van <strong>" + vehicleColor + "</strong> kleur");
                 }
 

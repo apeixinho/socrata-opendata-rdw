@@ -1,11 +1,23 @@
-# socrata-opendata-rdw first level
+# Socrata OpenData RDW Example
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere mi et metus faucibus, a lobortis quam ultricies.
+The proposed challenge is to use [RDW API](https://dev.socrata.com/foundry/opendata.rdw.nl/m9d7-ebf2) in order to fetch vehicle information, more specifically color, based on the license plate.
 
-## second level
+## Acceptance Criteria
 
-Vestibulum sodales odio quis hendrerit euismod. Duis ligula erat, porttitor in risus eget, mollis pellentesque nunc. Curabitur finibus felis nec lacus ultricies, nec finibus nulla convallis.
+- The API has a GET method for license plate
+- The API gives the color of the corresponding vehicle as a response
+- The API is publicly accessible;
+- Use the Open Data to retrieve the required information API: https://dev.socrata.com/foundry/opendata.rdw.nl/m9d7-ebf2
+- The runtime runs in a cloud environment;
+- Source code of solution to deploy the runtime
+- Deployment are automated
 
-### third level
+## Description
 
-Curabitur finibus felis nec lacus ultricies, nec finibus nulla convallis. Integer sapien massa, condimentum vitae purus sit amet, condimentum eleifend tellus. Phasellus sed ante viverra, gravida est at, fermentum mauris.
+The application is deployed and available at: [Google Cloud Platform](https://socrata-opendata-rdw.appspot.com/)
+
+It applies _Continuous and Automated Deployments_ when changes are pushed to the **master** branch
+
+The following image describes a license plate submission (e.g. **0001ES** ) and consequent response
+
+![RDW-App](rdw-app.png)
